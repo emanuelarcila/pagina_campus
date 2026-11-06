@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADARA PARFUM | Contenido</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
 
     <header>
         <h1>ADARA PARFUM</h1>
         <p>Familias olfativas, notas aromáticas y recursos multimedia.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="contenido.html" class="activo">Contenido</a></li>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+                <li class="menu__item"><a href="sobre-mi.html" class="menu__enlace">Sobre mí</a></li>
+                <li class="menu__item"><a href="contenido.html" class="menu__enlace menu__enlace--activo">Contenido</a>
+                </li>
+                <li class="menu__item"><a href="contacto.html" class="menu__enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -29,17 +33,70 @@
             <h2>Familias olfativas</h2>
             <p>Las principales familias de perfumes son:</p>
             <ul>
-                <li><strong>Cítricos:</strong> Aromas frescos y chispeantes con notas de limón, bergamota y naranja. Ideales para el uso diario.</li>
-                <li><strong>Florales:</strong> Elaborados con rosa, jazmín o azahar. Aportan romanticismo, elegancia y suavidad.</li>
-                <li><strong>Amaderados:</strong> Formulados con cedro, sándalo y vetiver. Tienen gran fijación y carácter cálido.</li>
-                <li><strong>Orientales:</strong> Mezcla de vainilla, ámbar y especias. Aromas cálidos, intensos y seductores.</li>
+                <li><strong>Cítricos:</strong> Aromas frescos y chispeantes con notas de limón, bergamota y naranja.
+                    Ideales para el uso diario.</li>
+                <li><strong>Florales:</strong> Elaborados con rosa, jazmín o azahar. Aportan romanticismo, elegancia y
+                    suavidad.</li>
+                <li><strong>Amaderados:</strong> Formulados con cedro, sándalo y vetiver. Tienen gran fijación y
+                    carácter cálido.</li>
+                <li><strong>Orientales:</strong> Mezcla de vainilla, ámbar y especias. Aromas cálidos, intensos y
+                    seductores.</li>
+            </ul>
+        </section>
+
+        <section id="tabla-concentraciones">
+            <h2>Concentraciones y fijación</h2>
+            <p>Guía comparativa según la pureza y concentración de aceites esenciales:</p>
+            <table class="tabla-fragancias">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Concentración</th>
+                        <th>Duración</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parfum (Extracto)</td>
+                        <td>40% - 50%</td>
+                        <td>8 a 24 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Eau de Parfum (EdP)</td>
+                        <td>15% - 20%</td>
+                        <td>6 a 8 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Eau de Toilette (EdT)</td>
+                        <td>5% - 15%</td>
+                        <td>3 a 5 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Eau de Cologne (EdC)</td>
+                        <td>2% - 4%</td>
+                        <td>Hasta 2 horas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="recursos-enlaces">
+            <h2>Material y enlaces de consulta</h2>
+            <p>Accede a información externa o descarga nuestra guía técnica en formato digital:</p>
+            <ul class="lista-enlaces">
+                <li><a href="https://es.wikipedia.org/wiki/Perfume" target="_blank" rel="noopener">Historia del Perfume
+                        en Wikipedia</a></li>
+                <li><a href="https://www.fragrantica.es" target="_blank" rel="noopener">Enciclopedia de Fragancias
+                        Fragrantica</a></li>
+                <li><a href="../recursos/guia-fragancias.pdf" download>Descargar catálogo oficial en PDF</a></li>
             </ul>
         </section>
 
         <section id="seccion-imagen">
             <h2>Galería ilustrativa</h2>
             <figure>
-                <img src="../recursos/perfume.jpg" alt="Frascos de perfume elegantes en cristal" width="425" height="287">
+                <img src="../recursos/perfume.jpg" alt="Frascos de perfume elegantes en cristal" width="425"
+                    height="287">
                 <figcaption>Colección de frascos de perfume.</figcaption>
             </figure>
         </section>
@@ -58,4 +115,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADARA PARFUM | Contacto</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ADARA PARFUM</h1>
+        <p>Ponte en contacto con nosotros.</p>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+                <li class="menu__item"><a href="sobre-mi.html" class="menu__enlace">Sobre mí</a></li>
+                <li class="menu__item"><a href="contenido.html" class="menu__enlace">Contenido</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__enlace menu__enlace--activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto" action="contacto.html" method="get">
+                <p>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <button type="submit" class="btn-enlace">Enviar</button>
+                </p>
+            </form>
+        </section>
+
+        <section id="resultado" style="display: none;">
+            <h2>Datos enviados</h2>
+            <p><strong>Nombre:</strong> <span id="mostrar-nombre"></span></p>
+            <p><strong>Correo:</strong> <span id="mostrar-correo"></span></p>
+        </section>
+
+        <p class="acceso-rapido">
+            <a href="index.html" class="btn-enlace">Volver al inicio</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ADARA PARFUM. Proyecto académico de desarrollo web.</p>
+    </footer>
+
+    <script>
+        function procesarDatos() {
+            var params = new URLSearchParams(window.location.search);
+            var nombreUrl = params.get('nombre');
+            var correoUrl = params.get('correo');
+            if (nombreUrl && correoUrl) {
+                document.getElementById('nombre').value = nombreUrl;
+                document.getElementById('correo').value = correoUrl;
+                document.getElementById('mostrar-nombre').textContent = nombreUrl;
+                document.getElementById('mostrar-correo').textContent = correoUrl;
+                document.getElementById('resultado').style.display = 'block';
+            }
+        }
+
+        document.getElementById('form-contacto').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var n = document.getElementById('nombre').value;
+            var c = document.getElementById('correo').value;
+            if (n && c) {
+                document.getElementById('mostrar-nombre').textContent = n;
+                document.getElementById('mostrar-correo').textContent = c;
+                document.getElementById('resultado').style.display = 'block';
+            }
+        });
+
+        procesarDatos();
+    </script>
+
+</body>
+
+</html>
