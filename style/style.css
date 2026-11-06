@@ -290,6 +290,15 @@ img, video {
     border-radius: 8px;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(74, 21, 75, 0.15);
+}
+
 figcaption {
     margin-top: 6px;
     font-size: 0.9rem;
