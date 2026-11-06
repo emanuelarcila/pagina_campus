@@ -1,3 +1,4 @@
+/* 1. BASE */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +12,14 @@ body {
     background: linear-gradient(#fdf5fc, #f0e4f0);
 }
 
-header {
-    background: linear-gradient(135deg, #4a154b, #8a2b7a);
+/* 2. HEADER Y FOOTER */
+header, footer {
     color: white;
     text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #4a154b, #8a2b7a);
     padding: 25px;
 }
 
@@ -23,6 +28,13 @@ header h1 {
     margin-bottom: 5px;
 }
 
+footer {
+    background: linear-gradient(to right, #2b0845, #4a154b);
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* 3. NAVEGACION Y BOTONES */
 nav ul {
     list-style: none;
     display: flex;
@@ -31,19 +43,20 @@ nav ul {
     margin-top: 15px;
 }
 
-nav a {
+nav a, .btn-enlace {
     color: white;
     text-decoration: none;
-    background: #6a1b6d;
     padding: 8px 15px;
     border-radius: 5px;
+    display: inline-block;
+    background: #6a1b6d;
 }
 
-nav a:hover,
-nav a.activo {
+nav a:hover, nav a.activo, .btn-enlace {
     background: linear-gradient(to right, #8a2b7a, #b3398b);
 }
 
+/* 4. CONTENIDO Y SECCIONES */
 main {
     width: 85%;
     max-width: 800px;
@@ -63,48 +76,26 @@ h2 {
     margin-bottom: 10px;
 }
 
-p {
+p, ul {
     margin-bottom: 10px;
 }
 
 ul {
     margin-left: 20px;
-    margin-bottom: 10px;
 }
 
 li {
     margin-bottom: 5px;
 }
 
-.acceso-rapido {
+/* 5. MULTIMEDIA Y CENTRADO */
+figure, .acceso-rapido {
     text-align: center;
     margin: 15px 0;
 }
 
-.btn-enlace {
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(to right, #6a1b6d, #9c27b0);
-    padding: 8px 15px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-img,
-video {
+img, video {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-figure {
-    text-align: center;
-}
-
-footer {
-    background: linear-gradient(to right, #2b0845, #4a154b);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
 }
