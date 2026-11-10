@@ -1,6 +1,6 @@
-/* ========================================================
-   1. RESET Y CONFIGURACIÓN BASE
-   ======================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+/* Base y tipografia */
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +8,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #333333;
-    line-height: 1.5;
+    line-height: 1.6;
     background: linear-gradient(#fdf5fc, #f0e4f0);
     min-height: 100vh;
 }
 
-/* ========================================================
-   2. SELECTORES LÓGICOS Y TIPOGRAFÍA
-   ======================================================== */
 :is(h1, h2, h3) {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', Georgia, Garamond, 'Times New Roman', serif;
     color: #4a154b;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
@@ -37,9 +34,7 @@ li {
     margin-bottom: 5px;
 }
 
-/* ========================================================
-   3. ENCABEZADO Y MENÚ (COMBINADOR Y MODIFICADOR)
-   ======================================================== */
+/* Encabezado y menu */
 header, footer {
     color: #ffffff;
     text-align: center;
@@ -85,9 +80,7 @@ header p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================================================
-   4. ESTRUCTURA PRINCIPAL Y SECCIONES
-   ======================================================== */
+/* Secciones y contenedores */
 main {
     width: 88%;
     max-width: 820px;
@@ -105,9 +98,7 @@ section:not(:last-child) {
     margin-bottom: 25px;
 }
 
-/* ========================================================
-   5. TARJETA DE PROYECTO (BEM - SELECTORES DE UNA SOLA CLASE)
-   ======================================================== */
+/* Tarjeta BEM */
 .tarjeta {
     background: #ffffff;
     border-radius: 12px;
@@ -159,9 +150,7 @@ section:not(:last-child) {
     color: #ffffff;
 }
 
-/* ========================================================
-   6. TABLA Y LISTA (PSEUDOCLASES DE ESTRUCTURA)
-   ======================================================== */
+/* Tablas y listas */
 .tabla-fragancias {
     width: 100%;
     border-collapse: collapse;
@@ -198,9 +187,7 @@ ul li:last-child {
     color: #6a1b6d;
 }
 
-/* ========================================================
-   7. ENLACES Y SELECTORES DE ATRIBUTOS
-   ======================================================== */
+/* Enlaces por atributo */
 a[href^="https"] {
     color: #0b62a4;
     text-decoration: underline dotted;
@@ -224,9 +211,7 @@ a[href$=".pdf"]::after {
     font-size: 0.8em;
 }
 
-/* ========================================================
-   8. ESTADOS INTERACTIVOS (CURSOR, FOCO Y BOTÓN PRESIONADO)
-   ======================================================== */
+/* Estados interactivos */
 a, button {
     cursor: pointer;
 }
@@ -247,13 +232,10 @@ a:hover {
 button:active,
 .btn-enlace:active,
 .tarjeta__enlace:active {
-    transform: scale(0.97);
     filter: brightness(0.85);
 }
 
-/* ========================================================
-   9. FORMULARIO, BOTONES GENERALES Y MULTIMEDIA
-   ======================================================== */
+/* Formularios y multimedia */
 .btn-enlace, button {
     color: #ffffff;
     text-decoration: none;
@@ -312,9 +294,7 @@ footer {
     margin-top: 35px;
 }
 
-/* ========================================================
-   10. ELEMENTOS GEOMÉTRICOS Y DECORATIVOS (CÍRCULOS Y CUADRADOS)
-   ======================================================== */
+/* Elementos geometricos */
 .perfil-contenedor {
     display: flex;
     align-items: center;
@@ -364,12 +344,10 @@ footer {
     padding: 20px 15px;
     text-align: center;
     box-shadow: 0 3px 10px rgba(74, 21, 75, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .caja-cuadrada:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(74, 21, 75, 0.12);
+    border-color: #ba4372;
 }
 
 .caja-cuadrada__titulo {
